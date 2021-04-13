@@ -79,7 +79,7 @@
 <wire x1="0" y1="60" x2="0" y2="0" width="0.1524" layer="20"/>
 <hole x="4" y="56" drill="3.1"/>
 <hole x="96" y="56" drill="3.1"/>
-<hole x="97" y="4" drill="3.1"/>
+<hole x="96" y="4" drill="3.1"/>
 <hole x="4" y="4" drill="3.1"/>
 <text x="78" y="34" size="1.4224" layer="25">SCL</text>
 <text x="78" y="32" size="1.4224" layer="25">SDA</text>
