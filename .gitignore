@@ -1,4 +1,5 @@
 *.l#*
 *.b#*
 *.s#*
+*.zip
 .DS_Store
