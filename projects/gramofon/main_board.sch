@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -73,41 +73,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="ligocki">
-<packages>
-<package name="RIAA_PREAMP">
-<hole x="4" y="39" drill="3.5"/>
-<hole x="4" y="3" drill="3.5"/>
-<wire x1="44" y1="42" x2="44" y2="0" width="0.127" layer="21"/>
-<wire x1="44" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="0" y2="42" width="0.127" layer="21"/>
-<wire x1="0" y1="42" x2="44" y2="42" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="RIAA_PREAMP">
-<wire x1="0" y1="0" x2="0" y2="27.94" width="0.254" layer="94"/>
-<wire x1="0" y1="27.94" x2="27.94" y2="27.94" width="0.254" layer="94"/>
-<wire x1="27.94" y1="27.94" x2="27.94" y2="0" width="0.254" layer="94"/>
-<wire x1="27.94" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<text x="5.08" y="12.7" size="2.1844" layer="94">RIAA Preamp</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="RIAA_PREAMP">
-<gates>
-<gate name="G$1" symbol="RIAA_PREAMP" x="-12.7" y="-12.7"/>
-</gates>
-<devices>
-<device name="" package="RIAA_PREAMP">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="NUCLEO-F303K8">
 <packages>
 <package name="MODULE_NUCLEO-F303K8">
@@ -262,6 +227,86 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="gramofon">
+<packages>
+<package name="BUTTON">
+<wire x1="0" y1="0" x2="7" y2="0" width="0.127" layer="21"/>
+<wire x1="7" y1="0" x2="7" y2="20" width="0.127" layer="21"/>
+<wire x1="7" y1="20" x2="0" y2="20" width="0.127" layer="21"/>
+<wire x1="0" y1="20" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="INPUT" x="3.5" y="18" drill="3.8" shape="long"/>
+<pad name="PUSH_TO_OFF" x="3.5" y="2" drill="3.8" shape="long"/>
+<wire x1="2.5" y1="15" x2="2.5" y2="13.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="13.5" x2="4.5" y2="13.5" width="0.127" layer="21"/>
+<wire x1="4.5" y1="13.5" x2="4.5" y2="15" width="0.127" layer="21"/>
+<wire x1="4.5" y1="15" x2="2.5" y2="15" width="0.127" layer="21"/>
+<pad name="PUSH_TO_ON" x="3.5" y="9" drill="3.8" shape="long"/>
+</package>
+<package name="MOTOR_DRIVER">
+<wire x1="0" y1="0" x2="0" y2="79" width="0.127" layer="21"/>
+<wire x1="0" y1="79" x2="56" y2="79" width="0.127" layer="21"/>
+<wire x1="56" y1="79" x2="56" y2="0" width="0.127" layer="21"/>
+<wire x1="56" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<hole x="4" y="4" drill="3.2"/>
+<hole x="52" y="4" drill="3.2"/>
+<hole x="52" y="75" drill="3.2"/>
+<hole x="4" y="75" drill="3.2"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BUTTON">
+<wire x1="10.16" y1="0" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="2.54" x2="20.32" y2="5.08" width="0.254" layer="94"/>
+<pin name="INPUT" x="2.54" y="0" length="middle"/>
+<pin name="PUSH_TO_OFF" x="27.94" y="5.08" length="middle" rot="R180"/>
+<pin name="PUSH_TO_ON" x="27.94" y="0" length="middle" rot="R180"/>
+<wire x1="15.24" y1="2.54" x2="15.24" y2="7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="7.62" x2="17.78" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="5.08" x2="22.86" y2="5.08" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+</symbol>
+<symbol name="MOTOR_DRIVER">
+<wire x1="-27.94" y1="17.78" x2="27.94" y2="17.78" width="0.254" layer="94"/>
+<wire x1="27.94" y1="17.78" x2="27.94" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-17.78" x2="-27.94" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-27.94" y1="-17.78" x2="-27.94" y2="17.78" width="0.254" layer="94"/>
+<text x="-15.24" y="0" size="2.54" layer="94">MOTOR_DRIVER</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BUTTON">
+<gates>
+<gate name="G$1" symbol="BUTTON" x="-15.24" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="BUTTON">
+<connects>
+<connect gate="G$1" pin="INPUT" pad="INPUT"/>
+<connect gate="G$1" pin="PUSH_TO_OFF" pad="PUSH_TO_OFF"/>
+<connect gate="G$1" pin="PUSH_TO_ON" pad="PUSH_TO_ON"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOTOR_DRIVER">
+<gates>
+<gate name="G$1" symbol="MOTOR_DRIVER" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="MOTOR_DRIVER">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -272,15 +317,17 @@
 </class>
 </classes>
 <parts>
-<part name="U$1" library="ligocki" deviceset="RIAA_PREAMP" device=""/>
 <part name="A1" library="NUCLEO-F303K8" deviceset="NUCLEO-F303K8" device=""/>
+<part name="U$2" library="gramofon" deviceset="BUTTON" device=""/>
+<part name="U$3" library="gramofon" deviceset="BUTTON" device=""/>
+<part name="U$4" library="gramofon" deviceset="BUTTON" device=""/>
+<part name="U$5" library="gramofon" deviceset="MOTOR_DRIVER" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="10.16" y="7.62" smashed="yes"/>
 <instance part="A1" gate="A" x="71.12" y="68.58" smashed="yes">
 <attribute name="NAME" x="66.03081875" y="89.4456" size="1.781209375" layer="95"/>
 <attribute name="VALUE" x="66.036740625" y="45.9595" size="1.779140625" layer="96"/>
@@ -289,6 +336,10 @@
 <attribute name="NAME" x="45.718140625" y="89.4156" size="1.77865" layer="95"/>
 <attribute name="VALUE" x="45.710990625" y="45.6795" size="1.78115" layer="96"/>
 </instance>
+<instance part="U$2" gate="G$1" x="-99.06" y="55.88" smashed="yes"/>
+<instance part="U$3" gate="G$1" x="-99.06" y="38.1" smashed="yes"/>
+<instance part="U$4" gate="G$1" x="-99.06" y="20.32" smashed="yes"/>
+<instance part="U$5" gate="G$1" x="-20.32" y="104.14" smashed="yes"/>
 </instances>
 <busses>
 </busses>
