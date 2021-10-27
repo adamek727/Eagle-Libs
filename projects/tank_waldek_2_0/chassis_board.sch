@@ -19339,7 +19339,6 @@ Grid 5.00 mm&lt;p&gt;
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/2"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/2"/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/2"/>
-<part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -19347,6 +19346,7 @@ Grid 5.00 mm&lt;p&gt;
 <part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML1206" package3d_urn="urn:adsk.eagle:package:15829/1"/>
 <part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML1206" package3d_urn="urn:adsk.eagle:package:15829/1"/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19481,9 +19481,6 @@ Grid 5.00 mm&lt;p&gt;
 <attribute name="NAME" x="82.55" y="-31.9786" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="82.55" y="-27.178" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND6" gate="1" x="99.06" y="-35.56" smashed="yes">
-<attribute name="VALUE" x="96.52" y="-38.1" size="1.778" layer="96"/>
-</instance>
 <instance part="JP1" gate="A" x="78.74" y="50.8" smashed="yes">
 <attribute name="NAME" x="72.39" y="56.515" size="1.778" layer="95"/>
 <attribute name="VALUE" x="72.39" y="43.18" size="1.778" layer="96"/>
@@ -19494,20 +19491,23 @@ Grid 5.00 mm&lt;p&gt;
 <instance part="GND7" gate="1" x="71.12" y="38.1" smashed="yes">
 <attribute name="VALUE" x="68.58" y="35.56" size="1.778" layer="96"/>
 </instance>
-<instance part="LED6" gate="G$1" x="88.9" y="-15.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="93.472" y="-11.684" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="93.472" y="-9.525" size="1.778" layer="96" rot="R180"/>
+<instance part="LED6" gate="G$1" x="91.44" y="-15.24" smashed="yes" rot="R270">
+<attribute name="NAME" x="86.868" y="-18.796" size="1.778" layer="95"/>
+<attribute name="VALUE" x="86.868" y="-20.955" size="1.778" layer="96"/>
 </instance>
-<instance part="LED3" gate="G$1" x="88.9" y="-22.86" smashed="yes" rot="R90">
-<attribute name="NAME" x="93.472" y="-19.304" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="93.472" y="-17.145" size="1.778" layer="96" rot="R180"/>
+<instance part="LED3" gate="G$1" x="91.44" y="-22.86" smashed="yes" rot="R270">
+<attribute name="NAME" x="86.868" y="-26.416" size="1.778" layer="95"/>
+<attribute name="VALUE" x="86.868" y="-28.575" size="1.778" layer="96"/>
 </instance>
-<instance part="LED4" gate="G$1" x="88.9" y="-30.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="93.472" y="-26.924" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="93.472" y="-24.765" size="1.778" layer="96" rot="R180"/>
+<instance part="LED4" gate="G$1" x="91.44" y="-30.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="86.868" y="-34.036" size="1.778" layer="95"/>
+<attribute name="VALUE" x="86.868" y="-36.195" size="1.778" layer="96"/>
 </instance>
 <instance part="P+6" gate="VCC" x="96.52" y="38.1" smashed="yes">
 <attribute name="VALUE" x="93.98" y="35.56" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+7" gate="VCC" x="99.06" y="-7.62" smashed="yes">
+<attribute name="VALUE" x="96.52" y="-10.16" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -19599,20 +19599,6 @@ Grid 5.00 mm&lt;p&gt;
 <wire x1="116.84" y1="83.82" x2="116.84" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="99.06" y1="-15.24" x2="99.06" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="LED6" gate="G$1" pin="C"/>
-<wire x1="99.06" y1="-22.86" x2="99.06" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="-30.48" x2="99.06" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="-15.24" x2="99.06" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
-<wire x1="93.98" y1="-22.86" x2="99.06" y2="-22.86" width="0.1524" layer="91"/>
-<junction x="99.06" y="-22.86"/>
-<pinref part="LED4" gate="G$1" pin="C"/>
-<wire x1="93.98" y1="-30.48" x2="99.06" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="99.06" y="-30.48"/>
-</segment>
-<segment>
 <pinref part="JP2" gate="A" pin="4"/>
 <wire x1="210.82" y1="5.08" x2="182.88" y2="5.08" width="0.1524" layer="91"/>
 <label x="190.5" y="5.08" size="1.778" layer="95"/>
@@ -19671,6 +19657,20 @@ Grid 5.00 mm&lt;p&gt;
 <wire x1="99.06" y1="33.02" x2="96.52" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
 <wire x1="96.52" y1="33.02" x2="96.52" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="99.06" y1="-10.16" x2="99.06" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="P+7" gate="VCC" pin="VCC"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<wire x1="99.06" y1="-15.24" x2="99.06" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-22.86" x2="99.06" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-30.48" x2="99.06" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<wire x1="93.98" y1="-22.86" x2="99.06" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="99.06" y="-22.86"/>
+<pinref part="LED6" gate="G$1" pin="A"/>
+<wire x1="93.98" y1="-15.24" x2="99.06" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="99.06" y="-15.24"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -19932,21 +19932,21 @@ Grid 5.00 mm&lt;p&gt;
 <net name="N$3" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="LED6" gate="G$1" pin="A"/>
+<pinref part="LED6" gate="G$1" pin="C"/>
 <wire x1="83.82" y1="-15.24" x2="86.36" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
 <wire x1="83.82" y1="-22.86" x2="86.36" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
 <wire x1="83.82" y1="-30.48" x2="86.36" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
