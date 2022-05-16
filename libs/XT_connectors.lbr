@@ -40,7 +40,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -95,6 +95,34 @@
 <text x="11.4" y="1.7" size="2.54" layer="21">-</text>
 <pad name="PLUS" x="2.6" y="2.6" drill="2.7" shape="octagon"/>
 <pad name="MINUS" x="7.6" y="2.6" drill="2.7" shape="octagon"/>
+</package>
+<package name="XT30_90DEG_FOOTPRINT">
+<wire x1="0" y1="0" x2="10" y2="0" width="0.127" layer="21"/>
+<wire x1="10" y1="0" x2="10" y2="5.5" width="0.127" layer="21"/>
+<wire x1="10" y1="5.5" x2="10" y2="7.5" width="0.127" layer="21"/>
+<wire x1="10" y1="7.5" x2="10" y2="9" width="0.127" layer="21"/>
+<wire x1="10" y1="9" x2="0" y2="9" width="0.127" layer="21"/>
+<wire x1="0" y1="9" x2="0" y2="7.5" width="0.127" layer="21"/>
+<wire x1="0" y1="7.5" x2="0" y2="5.5" width="0.127" layer="21"/>
+<wire x1="0" y1="5.5" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="10" y1="7.5" x2="11.5" y2="7.5" width="0.127" layer="21"/>
+<wire x1="11.5" y1="7.5" x2="11.5" y2="5.5" width="0.127" layer="21"/>
+<wire x1="11.5" y1="5.5" x2="10" y2="5.5" width="0.127" layer="21"/>
+<wire x1="0" y1="7.5" x2="-1.5" y2="7.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="7.5" x2="-1.5" y2="5.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="5.5" x2="0" y2="5.5" width="0.127" layer="21"/>
+<pad name="NC1" x="-0.75" y="6.5" drill="1.1"/>
+<pad name="NC2" x="10.75" y="6.5" drill="1.1"/>
+<pad name="MINUS" x="7.5" y="-3" drill="2.1" shape="square"/>
+<pad name="PLUS" x="2.5" y="-3" drill="2.1"/>
+<wire x1="1.5" y1="0" x2="1.5" y2="-3" width="0.127" layer="47"/>
+<wire x1="1.5" y1="-3" x2="3.5" y2="-3" width="0.127" layer="47"/>
+<wire x1="3.5" y1="-3" x2="3.5" y2="0" width="0.127" layer="47"/>
+<wire x1="6.5" y1="0" x2="6.5" y2="-3" width="0.127" layer="47"/>
+<wire x1="6.5" y1="-3" x2="8.5" y2="-3" width="0.127" layer="47"/>
+<wire x1="8.5" y1="-3" x2="8.5" y2="0" width="0.127" layer="47"/>
+<text x="9.5" y="-3.5" size="1.27" layer="47">-</text>
+<text x="-0.5" y="-3.5" size="1.27" layer="47">+</text>
 </package>
 </packages>
 <symbols>
@@ -165,6 +193,22 @@
 </gates>
 <devices>
 <device name="" package="XT30_FOOTPRINT">
+<connects>
+<connect gate="G$1" pin="+" pad="PLUS"/>
+<connect gate="G$1" pin="-" pad="MINUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XT30_90DEG">
+<gates>
+<gate name="G$1" symbol="XT30_SYMBOL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="XT30_90DEG_FOOTPRINT">
 <connects>
 <connect gate="G$1" pin="+" pad="PLUS"/>
 <connect gate="G$1" pin="-" pad="MINUS"/>
