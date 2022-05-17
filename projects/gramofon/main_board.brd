@@ -83,10 +83,10 @@
 <wire x1="162" y1="87" x2="188" y2="87" width="0.1524" layer="20"/>
 <wire x1="188" y1="87" x2="188" y2="99" width="0.1524" layer="20"/>
 <wire x1="188" y1="99" x2="290" y2="99" width="0.1524" layer="20"/>
-<wire x1="235" y1="84" x2="235" y2="34" width="0.1524" layer="20"/>
-<wire x1="235" y1="34" x2="222" y2="34" width="0.1524" layer="20"/>
-<wire x1="222" y1="34" x2="222" y2="84" width="0.1524" layer="20"/>
-<wire x1="222" y1="84" x2="235" y2="84" width="0.1524" layer="20"/>
+<wire x1="237" y1="84" x2="237" y2="34" width="0.1524" layer="20"/>
+<wire x1="237" y1="34" x2="220" y2="34" width="0.1524" layer="20"/>
+<wire x1="220" y1="34" x2="220" y2="84" width="0.1524" layer="20"/>
+<wire x1="220" y1="84" x2="237" y2="84" width="0.1524" layer="20"/>
 <dimension x1="263" y1="94" x2="290" y2="94" x3="276.5" y3="89" textsize="1.778" layer="47"/>
 <dimension x1="263" y1="94" x2="263" y2="99" x3="258" y3="96.5" textsize="1.778" layer="47"/>
 <dimension x1="263" y1="6" x2="290" y2="6" x3="276.5" y3="-4.997265625" textsize="1.778" layer="47"/>
@@ -97,16 +97,16 @@
 <dimension x1="57" y1="86" x2="57" y2="99" x3="52" y3="92.5" textsize="1.778" layer="47"/>
 <dimension x1="162" y1="87" x2="188" y2="87" x3="175" y3="81" textsize="1.778" layer="47"/>
 <dimension x1="222" y1="34" x2="222" y2="84" x3="240" y3="59" textsize="1.778" layer="47"/>
-<dimension x1="222" y1="84" x2="235" y2="84" x3="228.5" y3="87" textsize="1.778" layer="47"/>
+<dimension x1="220" y1="84" x2="237" y2="84" x3="228.5" y3="87" textsize="1.778" layer="47"/>
 <dimension x1="67" y1="92" x2="57" y2="92" x3="62" y3="86" textsize="1.778" layer="47"/>
 <dimension x1="67" y1="92" x2="67" y2="99" x3="74" y3="95.5" textsize="1.778" layer="47"/>
 <dimension x1="68" y1="5" x2="0" y2="5" x3="34" y3="-6" textsize="1.778" layer="47"/>
 <dimension x1="68" y1="5" x2="68" y2="0" x3="74" y3="2.5" textsize="1.778" layer="47"/>
 <dimension x1="188" y1="87" x2="188" y2="99" x3="194" y3="93" textsize="1.778" layer="47"/>
-<wire x1="222" y1="59" x2="222" y2="34" width="0.1524" layer="47"/>
-<dimension x1="222" y1="59" x2="222" y2="34" x3="228" y3="46.5" textsize="1.778" layer="47"/>
-<wire x1="222" y1="59" x2="207" y2="59" width="0.1524" layer="47"/>
-<dimension x1="222" y1="59" x2="207" y2="59" x3="214.5" y3="62" textsize="1.778" layer="47"/>
+<wire x1="220" y1="59" x2="220" y2="34" width="0.1524" layer="47"/>
+<dimension x1="220" y1="59" x2="220" y2="34" x3="226" y3="46.5" textsize="1.778" layer="47"/>
+<wire x1="220" y1="59" x2="207" y2="59" width="0.1524" layer="47"/>
+<dimension x1="220" y1="59" x2="207" y2="59" x3="213.5" y3="62" textsize="1.778" layer="47"/>
 <dimension x1="207" y1="69" x2="207" y2="59" x3="202" y3="64" textsize="1.778" layer="47" dtype="horizontal"/>
 <dimension x1="207" y1="49" x2="207" y2="59" x3="202" y3="54" textsize="1.778" layer="47" dtype="horizontal"/>
 <dimension x1="235" y1="34" x2="290" y2="34" x3="262.5" y3="30" textsize="1.778" layer="47"/>
@@ -1758,17 +1758,26 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="32" x="107" y="8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="112.04" y="15.62" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
+<element name="X10" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" package="W237-102" package3d_urn="urn:adsk.eagle:package:10688/1" value="" x="-17" y="-4" smashed="yes">
+<attribute name="MF" value="" x="-17" y="-4" size="1.4224" layer="27" display="off"/>
+<attribute name="MPN" value="237-102" x="-17" y="-4" size="1.4224" layer="27" display="off"/>
+<attribute name="NAME" x="-20.8462" y="-9.0038" size="1.27" layer="25" ratio="10"/>
+<attribute name="OC_FARNELL" value="unknown" x="-17" y="-4" size="1.4224" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="70K9898" x="-17" y="-4" size="1.4224" layer="27" display="off"/>
+<attribute name="POPULARITY" value="32" x="-17" y="-4" size="1.4224" layer="27" display="off"/>
+<attribute name="VALUE" x="-22.04" y="-11.62" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="X11" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" package="W237-102" package3d_urn="urn:adsk.eagle:package:10688/1" value="" x="-28" y="-4" smashed="yes">
+<attribute name="MF" value="" x="-28" y="-4" size="1.4224" layer="27" display="off"/>
+<attribute name="MPN" value="237-102" x="-28" y="-4" size="1.4224" layer="27" display="off"/>
+<attribute name="NAME" x="-31.8462" y="-9.0038" size="1.27" layer="25" ratio="10"/>
+<attribute name="OC_FARNELL" value="unknown" x="-28" y="-4" size="1.4224" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="70K9898" x="-28" y="-4" size="1.4224" layer="27" display="off"/>
+<attribute name="POPULARITY" value="32" x="-28" y="-4" size="1.4224" layer="27" display="off"/>
+<attribute name="VALUE" x="-33.04" y="-11.62" size="1.27" layer="27" ratio="10"/>
+</element>
 </elements>
 <signals>
-<signal name="N$2">
-<via x="207" y="59" extent="1-16" drill="2.5" diameter="4"/>
-</signal>
-<signal name="N$3">
-<via x="207" y="69" extent="1-16" drill="2.5" diameter="4"/>
-</signal>
-<signal name="N$4">
-<via x="207" y="49" extent="1-16" drill="2.5" diameter="4"/>
-</signal>
 <signal name="N$1">
 <via x="209" y="74" extent="1-16" drill="2"/>
 </signal>
@@ -1813,7 +1822,8 @@ design rules under a new name.</description>
 <wire x1="270.422" y1="86" x2="272.422" y2="86" width="0.8128" layer="1"/>
 <wire x1="273" y1="66.578" x2="272.422" y2="66" width="0.8128" layer="1"/>
 <wire x1="273" y1="85.422" x2="273" y2="66.578" width="0.8128" layer="1"/>
-<wire x1="191.85" y1="29" x2="191.85" y2="58" width="0.8128" layer="1"/>
+<wire x1="191.85" y1="29" x2="191.85" y2="49" width="0.8128" layer="1"/>
+<wire x1="191.85" y1="49" x2="191.85" y2="58" width="0.8128" layer="1"/>
 <wire x1="191.85" y1="58" x2="191.85" y2="65.15" width="0.8128" layer="1"/>
 <wire x1="191.85" y1="65.15" x2="191" y2="66" width="0.8128" layer="1"/>
 <wire x1="191" y1="66" x2="182.84" y2="66" width="0.8128" layer="1"/>
@@ -1905,6 +1915,9 @@ design rules under a new name.</description>
 <wire x1="169" y1="24" x2="169" y2="58.16" width="0.8128" layer="1"/>
 <wire x1="119.5" y1="19.5" x2="122" y2="22" width="0.8128" layer="1"/>
 <wire x1="122" y1="22" x2="167" y2="22" width="0.8128" layer="1"/>
+<wire x1="198" y1="68" x2="199" y2="69" width="0.8128" layer="1"/>
+<via x="207" y="69" extent="1-16" drill="2.5" diameter="4"/>
+<wire x1="199" y1="69" x2="207" y2="69" width="0.8128" layer="1"/>
 </signal>
 <signal name="N$8">
 <contactref element="LED1" pad="A"/>
@@ -1945,6 +1958,12 @@ design rules under a new name.</description>
 <wire x1="186" y1="8" x2="186" y2="31" width="0.8128" layer="1"/>
 <wire x1="186" y1="31" x2="184.24" y2="32.76" width="0.8128" layer="1"/>
 <wire x1="184.24" y1="32.76" x2="182.62" y2="32.76" width="0.8128" layer="1"/>
+<via x="207" y="49" extent="1-16" drill="2.5" diameter="4"/>
+<wire x1="182.62" y1="32.76" x2="182.86" y2="33" width="0.8128" layer="16"/>
+<wire x1="194" y1="33" x2="205" y2="44" width="0.8128" layer="16"/>
+<wire x1="205" y1="44" x2="205" y2="47" width="0.8128" layer="16"/>
+<wire x1="205" y1="47" x2="207" y2="49" width="0.8128" layer="16"/>
+<wire x1="182.86" y1="33" x2="194" y2="33" width="0.8128" layer="16"/>
 </signal>
 <signal name="ADC_0">
 <contactref element="A1" pad="4.8"/>
@@ -2030,6 +2049,36 @@ design rules under a new name.</description>
 <vertex x="290" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
+</signal>
+<signal name="PWM_2">
+<contactref element="X10" pad="2"/>
+<contactref element="A1" pad="3.1"/>
+<wire x1="-14.5" y1="-5.27" x2="167.38" y2="65.78" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="PWM_3">
+<contactref element="X10" pad="1"/>
+<contactref element="A1" pad="3.2"/>
+<wire x1="-19.5" y1="-5.27" x2="167.38" y2="63.24" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="IO_2">
+<contactref element="X11" pad="2"/>
+<contactref element="A1" pad="3.15"/>
+<wire x1="-25.5" y1="-5.27" x2="167.38" y2="30.22" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="IO_3">
+<contactref element="X11" pad="1"/>
+<contactref element="A1" pad="3.14"/>
+<wire x1="-30.5" y1="-5.27" x2="167.38" y2="32.76" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="POT">
+<contactref element="A1" pad="4.10"/>
+<via x="207" y="59" extent="1-16" drill="2.5" diameter="4"/>
+<wire x1="182.62" y1="42.92" x2="182.7" y2="43" width="0.8128" layer="16"/>
+<wire x1="182.7" y1="43" x2="185" y2="43" width="0.8128" layer="16"/>
+<wire x1="185" y1="43" x2="188" y2="46" width="0.8128" layer="16"/>
+<wire x1="188" y1="46" x2="188" y2="53" width="0.8128" layer="16"/>
+<wire x1="188" y1="53" x2="194" y2="59" width="0.8128" layer="16"/>
+<wire x1="194" y1="59" x2="207" y2="59" width="0.8128" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

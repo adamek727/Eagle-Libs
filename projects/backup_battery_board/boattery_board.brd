@@ -86,7 +86,8 @@ rev 1.0</text>
 <dimension x1="56" y1="25.5" x2="56" y2="39" x3="67.5" y3="32.25" textsize="1.9304" layer="47"/>
 <dimension x1="61" y1="39" x2="61" y2="68" x3="67.5" y3="53.5" textsize="1.9304" layer="47"/>
 <hole x="55.5" y="64" drill="4"/>
-<text x="31.5" y="22.5" size="1.9304" layer="47" rot="R90">BATTERY PACK</text>
+<text x="37.5" y="39.5" size="1.9304" layer="47" rot="R180">BATTERY 
+   PACK</text>
 <hole x="4.5" y="42.5" drill="4"/>
 <hole x="4.5" y="22" drill="4"/>
 <hole x="26" y="42.5" drill="4"/>
