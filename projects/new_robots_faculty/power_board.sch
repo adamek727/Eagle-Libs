@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6891,6 +6891,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="U$30" library="AutoFuse_Holder" deviceset="AUTOFUSE" device=""/>
 <part name="LED8" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/2" value="10k"/>
+<part name="U$31" library="con-T-plug" deviceset="T-PLUG_CONNECTOR" device=""/>
+<part name="U$32" library="con-T-plug" deviceset="T-PLUG_CONNECTOR" device=""/>
+<part name="U$33" library="con-T-plug" deviceset="T-PLUG_CONNECTOR" device=""/>
+<part name="U$34" library="XT_connectors" deviceset="XT90" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6991,6 +6995,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="NAME" x="41.91" y="74.7014" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="41.91" y="79.502" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="U$31" gate="T_PLUG" x="12.7" y="2.54" smashed="yes" rot="R90"/>
+<instance part="U$32" gate="T_PLUG" x="12.7" y="-12.7" smashed="yes" rot="R90"/>
+<instance part="U$33" gate="T_PLUG" x="12.7" y="-27.94" smashed="yes" rot="R90"/>
+<instance part="U$34" gate="G$1" x="-40.64" y="2.54" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -7041,6 +7049,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="-22.86" y="40.64"/>
 <pinref part="U$21" gate="G$1" pin="C"/>
 <pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="U$34" gate="G$1" pin="+"/>
+<wire x1="-30.48" y1="5.08" x2="-22.86" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="5.08" x2="-22.86" y2="22.86" width="0.1524" layer="91"/>
+<junction x="-22.86" y="22.86"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -7256,8 +7268,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="154.94" y1="-30.48" x2="91.44" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="-30.48" x2="27.94" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="-30.48" x2="-15.24" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="-30.48" x2="-15.24" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="-30.48" x2="-15.24" y2="0" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="-15.24" y1="0" x2="-15.24" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="116.84" x2="-15.24" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="-"/>
 <wire x1="-30.48" y1="106.68" x2="-15.24" y2="106.68" width="0.1524" layer="91"/>
@@ -7306,12 +7319,27 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="76.2" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
 <junction x="27.94" y="76.2"/>
-<wire x1="27.94" y1="25.4" x2="27.94" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="25.4" x2="27.94" y2="10.16" width="0.1524" layer="91"/>
 <junction x="27.94" y="25.4"/>
 <junction x="27.94" y="-30.48"/>
+<wire x1="27.94" y1="10.16" x2="27.94" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-5.08" x2="27.94" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-20.32" x2="27.94" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="-22.86" x2="91.44" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="91.44" y="-22.86"/>
 <junction x="91.44" y="-30.48"/>
+<pinref part="U$34" gate="G$1" pin="-"/>
+<wire x1="-30.48" y1="0" x2="-15.24" y2="0" width="0.1524" layer="91"/>
+<junction x="-15.24" y="0"/>
+<pinref part="U$31" gate="T_PLUG" pin="P-2"/>
+<wire x1="15.24" y1="10.16" x2="27.94" y2="10.16" width="0.1524" layer="91"/>
+<junction x="27.94" y="10.16"/>
+<pinref part="U$32" gate="T_PLUG" pin="P-2"/>
+<wire x1="15.24" y1="-5.08" x2="27.94" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="27.94" y="-5.08"/>
+<pinref part="U$33" gate="T_PLUG" pin="P-2"/>
+<wire x1="15.24" y1="-20.32" x2="27.94" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="27.94" y="-20.32"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -7378,6 +7406,18 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="LED8" gate="G$1" pin="A"/>
 <wire x1="33.02" y1="83.82" x2="20.32" y2="83.82" width="0.1524" layer="91"/>
 <junction x="20.32" y="83.82"/>
+<pinref part="U$33" gate="T_PLUG" pin="P-1"/>
+<wire x1="15.24" y1="-25.4" x2="20.32" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-25.4" x2="20.32" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="20.32" y="20.32"/>
+<pinref part="U$32" gate="T_PLUG" pin="P-1"/>
+<wire x1="20.32" y1="-10.16" x2="20.32" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="5.08" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-10.16" x2="20.32" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="20.32" y="-10.16"/>
+<pinref part="U$31" gate="T_PLUG" pin="P-1"/>
+<wire x1="15.24" y1="5.08" x2="20.32" y2="5.08" width="0.1524" layer="91"/>
+<junction x="20.32" y="5.08"/>
 </segment>
 </net>
 <net name="N$13" class="0">
