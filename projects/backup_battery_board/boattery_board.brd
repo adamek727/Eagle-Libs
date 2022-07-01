@@ -9,6 +9,20 @@
 <grid distance="19.6850394" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -104,14 +118,12 @@ rev 1.0</text>
 <package name="KEYSTONE_1018_HOLDER">
 <wire x1="0" y1="0" x2="18.3" y2="0" width="0.127" layer="21"/>
 <wire x1="18.3" y1="0" x2="18.3" y2="42.9" width="0.127" layer="21"/>
-<wire x1="18.3" y1="42.9" x2="9.2" y2="42.9" width="0.127" layer="21"/>
-<wire x1="9.2" y1="42.9" x2="0" y2="42.9" width="0.127" layer="21"/>
+<wire x1="18.3" y1="42.9" x2="0" y2="42.9" width="0.127" layer="21"/>
 <wire x1="0" y1="42.9" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="9.2" y1="42.9" x2="9.2" y2="0" width="0.127" layer="21"/>
 <wire x1="9.2" y1="0" x2="9.3" y2="0" width="0.127" layer="21"/>
 <smd name="PLUS" x="9.2" y="46.6" dx="6.4516" dy="7" layer="1"/>
 <smd name="MINUS" x="9.1" y="-3.7" dx="6.4516" dy="7" layer="1"/>
-<hole x="17.4" y="41.63" drill="2"/>
+<hole x="17.4" y="41.63" drill="2.5"/>
 <text x="5.93" y="49.9" size="7.62" layer="21">+</text>
 <text x="6.095" y="-7.125" size="7.62" layer="21">_</text>
 </package>
